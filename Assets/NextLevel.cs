@@ -8,6 +8,7 @@ public class NextLevel : MonoBehaviour
     private bool isNear;
     public new Renderer renderer;
     public Color highlightColor = Color.yellow; // Color to highlight the treasure when near
+    private ExpertLevelManager ex;
 
     void Start()
     {
@@ -17,6 +18,7 @@ public class NextLevel : MonoBehaviour
         {
             Debug.LogError("Renderer component not found or missing material with color.");
         }
+        ex = FindObjectOfType<ExpertLevelManager>();
     }
 
     public void onPlayerEnterRange()
@@ -41,9 +43,13 @@ public class NextLevel : MonoBehaviour
 
     public void TryGoToNextLevel(InputAction.CallbackContext context)
     {
-        if (isNear && context.started)
+        if (isNear && context.started && !SessionManager.expertModeActive)
         {
             SessionManager.LoadNextLevelWithLoadingScreen();
+        } else if (isNear && context.started && SessionManager.expertModeActive)
+        {
+            ex.SetNextExpertLevelDifficulty();
+            SessionManager.LoadNextExpertLevelWithLoadingScreen();
         }
 
     }     

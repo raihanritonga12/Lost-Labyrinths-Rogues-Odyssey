@@ -24,12 +24,15 @@ public class Death : CoreComponent
         
         if (deathManager == null)
         {
+            LevelGenerator lg = FindObjectOfType<LevelGenerator>();
+            lg.EnemyKilled(core.transform.parent.gameObject);
             SessionManager.goldCarried += core.transform.GetComponentInChildren<Stats>().goldValue;
         }
         else
         {
             deathManager.TriggerDeathScreen();
         }
+
 
         core.transform.parent.gameObject.SetActive(false);
     }

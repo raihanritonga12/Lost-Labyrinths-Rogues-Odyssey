@@ -13,6 +13,7 @@ public class LevelGraphGen : MonoBehaviour
     public int treasureSpawnCoefficient = 5;
     private Dictionary<Vector2Int, Room> levelGrid = new();
     private int treasureToSpawn;
+    public int treasureCount; 
 
     private bool IsGridFilled(Vector2Int pos)
     {
@@ -35,6 +36,7 @@ public class LevelGraphGen : MonoBehaviour
         }
 
         treasureToSpawn = Mathf.Clamp(stoppingRoomNum / treasureSpawnCoefficient, 1, 5);
+        treasureCount = treasureToSpawn;
 
         levelGrid = new();
         currentRoomNum = 0;

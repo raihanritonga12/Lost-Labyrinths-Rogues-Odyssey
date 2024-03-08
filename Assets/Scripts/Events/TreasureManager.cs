@@ -116,6 +116,18 @@ public class TreasureManager : MonoBehaviour
         // Invoke the UnityEvent associated with the item
         if (item != null && item.onUse != null)
         {
+            if (item.rarity == Item.Rarity.COMMON)
+            {
+                SessionManager.commonItemGet++;
+            }
+            else if (item.rarity == Item.Rarity.RARE)
+            {
+                SessionManager.rareItemGet++;
+            }
+            else
+            {
+                SessionManager.legendItemGet++;
+            }
             item.onUse.Invoke();
         }
         pauseManager.Resume();

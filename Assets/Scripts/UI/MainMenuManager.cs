@@ -62,6 +62,12 @@ public class MainMenuManager : MonoBehaviour
         SessionManager.LoadNextLevelWithLoadingScreen();
     }
 
+    public void StartNewExpertGame()
+    {
+        SessionManager.StartNewExpertSession();
+        SessionManager.LoadNextExpertLevelWithLoadingScreen();
+    }
+
     public void Exit()
     {
         Debug.Log("Quitting...");

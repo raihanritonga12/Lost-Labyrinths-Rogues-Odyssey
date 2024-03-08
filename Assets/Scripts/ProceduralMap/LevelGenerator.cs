@@ -62,6 +62,14 @@ public class LevelGenerator : MonoBehaviour
     private Vector3Int exitTilePos;
     private bool bossSpawned;
 
+    private Dictionary<GameObject, Enemy.Type> spawnedEnemies = new();
+
+    public int commonEnemySpawned = 0;
+    public int eliteEnemySpawned = 0;
+
+    public int commonEnemyKilled = 0;
+    public int eliteEnemyKilled = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -415,6 +423,7 @@ public class LevelGenerator : MonoBehaviour
         player.transform.position = playerSpawnPos;
         player.SetActive(true);
         playerAfterImagePool.SetActive(true);
+        Debug.Log("Current Difficulty: " + SessionManager.difficulty);
     }
 
     // Function to group adjacent enemy tiles
@@ -478,47 +487,75 @@ public class LevelGenerator : MonoBehaviour
         List<Enemy> normalEnemyList = enemyManager.GetEnemyByRarity(Enemy.Type.NORMAL);
         List<Enemy> eliteEnemyList = enemyManager.GetEnemyByRarity(Enemy.Type.ELITE);
         int enemyTileCount = 0;
+        int spawnedEnemiesCount = 0;
 
         foreach (List<Vector3Int> group in groupedEnemyTiles)
         {
             int tileCount = group.Count;
             enemyTileCount += tileCount;
-            
-            int difficulty = gameManager.difficulty; 
-            
+
+            int difficulty = gameManager.difficulty;
+
             // Assuming gameManager.difficulty is an int between 0 - 100
-            float spawnProbability = Mathf.Clamp01(tileCount * enemySpawnCoefficient * (difficulty / 100f)  / 100f) * 1.2f;
+            float spawnProbability = Mathf.Clamp01(tileCount * enemySpawnCoefficient * (difficulty / 100f) / 100f) * 1.2f;
             bool spawnEnemy = UnityEngine.Random.value <= spawnProbability;
             bool spawnElite = spawnProbability >= 1;
 
             if (spawnEnemy)
-            {   
+            {
                 // Choose spawn pos based on 1 of the tiles in the group
                 int randomIndex = UnityEngine.Random.Range(0, tileCount);
                 Vector3Int spawnPos = group[randomIndex] + Vector3Int.up;
 
                 // Choose enemy to spawn
                 Enemy enemy;
-                
+                Enemy.Type enemyType;
+
                 if (spawnElite && eliteEnemyList.Count > 0)
                 {
                     randomIndex = UnityEngine.Random.Range(0, eliteEnemyList.Count);
                     enemy = eliteEnemyList[randomIndex];
+                    eliteEnemySpawned++; // Increment elite enemy spawned count
+                    enemyType = Enemy.Type.ELITE;
                 }
                 else
                 {
                     randomIndex = UnityEngine.Random.Range(0, normalEnemyList.Count);
                     enemy = normalEnemyList[randomIndex];
+                    commonEnemySpawned++; // Increment common enemy spawned count
+                    enemyType = Enemy.Type.NORMAL;
                 }
 
                 // Instantiate Enemy To World
                 GameObject spawnedEnemy = Instantiate(enemy.prefab, spawnPos, Quaternion.identity);
+                spawnedEnemiesCount += 1;
                 spawnedEnemy.transform.GetComponentInChildren<Stats>().goldValue = enemy.goldValue;
+
+                // Add spawned enemy to the list
+                spawnedEnemies.Add(spawnedEnemy, enemyType);
             }
         }
         Debug.Log("Average tile per group: " + (enemyTileCount / groupedEnemyTiles.Count));
+        Debug.Log("Spawned Enemies: " + spawnedEnemiesCount);
     }
 
+    // Method to handle when an enemy is killed
+    public void EnemyKilled(GameObject enemy)
+    {
+        if (spawnedEnemies.Keys.Contains(enemy))
+        {
+            Enemy.Type killedType = spawnedEnemies[enemy];
+            spawnedEnemies.Remove(enemy);
+
+            if (killedType == Enemy.Type.ELITE)
+            {
+                eliteEnemyKilled++;
+            } else
+            {
+                commonEnemyKilled++;
+            }
+        }
+    }
     private void SpawnSpikes()
     {
         // Group Enemy Tiles Based On Adjacent Position

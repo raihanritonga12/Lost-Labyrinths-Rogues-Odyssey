@@ -134,6 +134,16 @@ public class ShopManager : MonoBehaviour
             if (item != null && item.onUse != null)
             {
                 SessionManager.goldCarried -= item.price;
+                if (item.rarity == Item.Rarity.COMMON)
+                {
+                    SessionManager.commonItemGet++;
+                } else if (item.rarity == Item.Rarity.RARE)
+                {
+                    SessionManager.rareItemGet++;
+                } else
+                {
+                    SessionManager.legendItemGet++;
+                }
                 item.onUse.Invoke();
                 
                 itemBought[generatedItemList.IndexOf(item)] = true;

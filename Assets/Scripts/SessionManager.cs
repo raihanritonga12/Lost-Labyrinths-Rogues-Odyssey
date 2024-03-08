@@ -23,6 +23,13 @@ public class SessionManager : MonoBehaviour
     public static GameObject currentShop;
     public static int loadingProgress = 0;
 
+    public static bool expertModeActive = false;
+    public static int currentExpertModeLevel = 1;
+    public static int maxExpertModeLevel = 10;
+
+    public static int commonItemGet = 0;
+    public static int rareItemGet = 0;
+    public static int legendItemGet = 0;
 
     void Awake()
     {
@@ -49,7 +56,27 @@ public class SessionManager : MonoBehaviour
         currentSceneIndex = 0;
         amountOfJumps = 1;
         speedMultiplier = 1;
-        jumpHeightMultiplier = 1; 
+        jumpHeightMultiplier = 1;
+
+        expertModeActive = false;
+        currentExpertModeLevel = 0;
+        maxExpertModeLevel = 10;
+}
+
+    public static void StartNewExpertSession()
+    {
+        difficulty = 10;
+        playerMaxHealth = 100f;
+        playerDamageMultiplier = 1f;
+        goldCarried = 0;
+        currentSceneIndex = 0;
+        amountOfJumps = 1;
+        speedMultiplier = 1;
+        jumpHeightMultiplier = 1;
+
+        expertModeActive = true;
+        currentExpertModeLevel = 0;
+        maxExpertModeLevel = 10;
     }
 
     public static void LoadNextLevel()
@@ -62,6 +89,20 @@ public class SessionManager : MonoBehaviour
         else
         {
             SceneManager.LoadScene(sceneListOrder[currentSceneIndex]);
+        }
+    }
+
+    public static void LoadNextExpertLevelWithLoadingScreen()
+    {
+        currentExpertModeLevel++;
+        ResetItemGetCount();
+        if (currentExpertModeLevel >= maxExpertModeLevel)
+        {
+            LoadSceneWithLoadingScreen(sceneListOrder[0]);
+        }
+        else
+        {
+            LoadSceneWithLoadingScreen("Cave Level Dynamic");
         }
     }
 
@@ -122,5 +163,12 @@ public class SessionManager : MonoBehaviour
 
             yield return null;
         }
+    }
+
+    private static void ResetItemGetCount()
+    {
+        commonItemGet = 0;
+        rareItemGet = 0;
+        legendItemGet = 0;
     }
 }

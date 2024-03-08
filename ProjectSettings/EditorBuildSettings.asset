@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Loading.unity
     guid: 1fefff80e35ded24d955f82934c0dfd4
+  - enabled: 1
+    path: Assets/Scenes/Cave Level Dynamic.unity
+    guid: cc5ef67e63db0fd49bacef6884ef67b0
   m_configObjects: {}
