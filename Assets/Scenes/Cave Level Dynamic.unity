@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 1266908}
   - component: {fileID: 1266910}
   - component: {fileID: 1266909}
+  - component: {fileID: 1266911}
   m_Layer: 7
   m_Name: Map
   m_TagString: Untagged
@@ -267,6 +268,19 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1266911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cacae1d7475ef48459acc9dfc721486d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tileRadius: 5
 --- !u!1 &3865877
 GameObject:
   m_ObjectHideFlags: 0
@@ -11097,6 +11111,7 @@ MonoBehaviour:
   eliteEnemySpawned: 0
   commonEnemyKilled: 0
   eliteEnemyKilled: 0
+  fog: {fileID: 1266911}
 --- !u!1 &1012731845
 GameObject:
   m_ObjectHideFlags: 0

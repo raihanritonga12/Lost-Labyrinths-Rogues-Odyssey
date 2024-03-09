@@ -70,6 +70,8 @@ public class LevelGenerator : MonoBehaviour
     public int commonEnemyKilled = 0;
     public int eliteEnemyKilled = 0;
 
+    public FogOfWar fog;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -279,6 +281,11 @@ public class LevelGenerator : MonoBehaviour
         SpawnShop();
         SpawnEnemies();
         SpawnBoss();
+
+        if (SessionManager.expertModeActive)
+        {
+            fog.StartFog();
+        }
 
         // tileShadowController.ActivateShadowEffect();       
         

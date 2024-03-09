@@ -1,0 +1,61 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Tilemaps;
+
+public class FogOfWar : MonoBehaviour
+{
+    private Player player;
+    private Tilemap tilemap;
+    private Dictionary<Vector3Int, TileBase> originalTiles = new Dictionary<Vector3Int, TileBase>();
+    public int tileRadius = 5;
+    private bool isStarted = false;
+
+    // Start is called before the first frame update
+    public void StartFog()
+    {
+        player = SessionManager.player;
+        tilemap = GetComponent<Tilemap>();
+        HideAllTiles();
+        isStarted = true;
+        Debug.Log("Fog Started");
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (isStarted)
+        {
+            UpdateVisibleTiles();
+        }
+    }
+
+    void HideAllTiles()
+    {
+        BoundsInt bounds = tilemap.cellBounds;
+        foreach (Vector3Int pos in bounds.allPositionsWithin)
+        {
+            TileBase tile = tilemap.GetTile(pos);
+            if (tile != null)
+            {
+                originalTiles[pos] = tile;
+                tilemap.SetTile(pos, null); // Remove tile from the map
+            }
+        }
+    }
+
+    void UpdateVisibleTiles()
+    {
+        BoundsInt bounds = tilemap.cellBounds;
+        foreach (Vector3Int pos in bounds.allPositionsWithin)
+        {
+            if (Vector3.Distance(tilemap.CellToWorld(pos), player.transform.position) <= tileRadius)
+            {
+                if (originalTiles.ContainsKey(pos))
+                {
+                    tilemap.SetTile(pos, originalTiles[pos]); // Add back the original tile
+                }
+            }
+        }
+    }
+}

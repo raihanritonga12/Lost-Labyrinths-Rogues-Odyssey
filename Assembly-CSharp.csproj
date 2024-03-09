@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\ProceduralMap\LevelGraphGen copy.cs" />
     <Compile Include="Assets\Scripts\Generics\GenericNotImplementedError.cs" />
     <Compile Include="Assets\Scripts\Particles\ParticleController.cs" />
+    <Compile Include="Assets\FogOfWar.cs" />
     <Compile Include="Assets\Scripts\Interfaces\ILogicUpdate.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerStates\SubStates\PlayerCrouchMoveState.cs" />
     <Compile Include="Assets\Scripts\Enemies\States\Data\D_PlayerDetected.cs" />
