@@ -132,7 +132,7 @@ public class TreasureManager : MonoBehaviour
         }
         pauseManager.Resume();
         treasureCanvas.SetActive(false);
-        Destroy(SessionManager.currentTreasure);
+        SessionManager.currentTreasure.SetActive(false);
     }
 
 }
