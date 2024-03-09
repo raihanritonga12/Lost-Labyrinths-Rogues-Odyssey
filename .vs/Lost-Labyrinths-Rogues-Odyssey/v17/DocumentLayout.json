@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2235702E-7BDE-2CB2-04B7-ADC2B9CDB713}|Assembly-CSharp.csproj|d:\\s7\\skripsi 3\\final game\\lost-labyrinths-rogues-odyssey\\assets\\scripts\\intermediaries\\animationtostatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2235702E-7BDE-2CB2-04B7-ADC2B9CDB713}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\intermediaries\\animationtostatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2235702E-7BDE-2CB2-04B7-ADC2B9CDB713}|Assembly-CSharp.csproj|d:\\s7\\skripsi 3\\final game\\lost-labyrinths-rogues-odyssey\\assets\\fogofwar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2235702E-7BDE-2CB2-04B7-ADC2B9CDB713}|Assembly-CSharp.csproj|solutionrelative:assets\\fogofwar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -111,6 +115,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AnimationToStatemachine.cs",
+              "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\Intermediaries\\AnimationToStatemachine.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Intermediaries\\AnimationToStatemachine.cs",
+              "ToolTip": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\Intermediaries\\AnimationToStatemachine.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Intermediaries\\AnimationToStatemachine.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T05:19:53.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FogOfWar.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\FogOfWar.cs",
               "RelativeDocumentMoniker": "Assets\\FogOfWar.cs",
@@ -123,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Death.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\Core\\CoreComponents\\Death.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\CoreComponents\\Death.cs",
@@ -135,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ExpertLevelManager.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\ExpertLevelManager.cs",
               "RelativeDocumentMoniker": "Assets\\ExpertLevelManager.cs",
@@ -147,7 +164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LevelGenerator.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\ProceduralMap\\LevelGenerator.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ProceduralMap\\LevelGenerator.cs",
@@ -155,12 +172,11 @@
               "RelativeToolTip": "Assets\\Scripts\\ProceduralMap\\LevelGenerator.cs",
               "ViewState": "AQIAABIBAAAAAAAAAADwvx4BAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T14:47:31.038Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T14:47:31.038Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TreasureManager.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\Events\\TreasureManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Events\\TreasureManager.cs",
@@ -168,12 +184,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Events\\TreasureManager.cs",
               "ViewState": "AQIAAF0AAAAAAAAAAAAowIYAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T15:49:53.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T15:49:53.992Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "LevelGraphGen.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\ProceduralMap\\LevelGraphGen.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ProceduralMap\\LevelGraphGen.cs",
@@ -185,7 +200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "SessionManager.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\SessionManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SessionManager.cs",
@@ -197,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "NextLevel.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\NextLevel.cs",
               "RelativeDocumentMoniker": "Assets\\NextLevel.cs",
@@ -209,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "GameManager.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\Manager\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Manager\\GameManager.cs",
@@ -221,7 +236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "MainMenuManager.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\UI\\MainMenuManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\MainMenuManager.cs",
@@ -233,7 +248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ShopManager.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\Events\\ShopManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Events\\ShopManager.cs",
@@ -245,7 +260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "TriggerOnPlayerNear.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\TriggerOnPlayerNear.cs",
               "RelativeDocumentMoniker": "Assets\\TriggerOnPlayerNear.cs",
@@ -257,7 +272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Treasure.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Treasure.cs",
               "RelativeDocumentMoniker": "Assets\\Treasure.cs",
@@ -269,7 +284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "PlayerHealthBar.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\UI\\PlayerHealthBar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\PlayerHealthBar.cs",
@@ -281,7 +296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "TileShadowController.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\TileShadowController.cs",
               "RelativeDocumentMoniker": "Assets\\TileShadowController.cs",
@@ -293,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Shop.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Shop.cs",
               "RelativeDocumentMoniker": "Assets\\Shop.cs",
@@ -305,7 +320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "EnemyManager.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\EnemyManager.cs",
               "RelativeDocumentMoniker": "Assets\\EnemyManager.cs",
@@ -317,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "FloatingEffect.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\FloatingEffect.cs",
               "RelativeDocumentMoniker": "Assets\\FloatingEffect.cs",
@@ -329,7 +344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "GoldUI.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\GoldUI.cs",
               "RelativeDocumentMoniker": "Assets\\GoldUI.cs",
@@ -341,7 +356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Spike.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\Obstacles\\Spike.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Obstacles\\Spike.cs",
@@ -353,7 +368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "SettingsMenu.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\UI\\SettingsMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\SettingsMenu.cs",
@@ -365,7 +380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "DeathManager.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\UI\\DeathManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\DeathManager.cs",
@@ -377,7 +392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "MapManager.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\UI\\MapManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\MapManager.cs",
@@ -389,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "PauseManager.cs",
               "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\UI\\PauseManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\PauseManager.cs",
