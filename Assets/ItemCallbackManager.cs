@@ -77,7 +77,7 @@ public class ItemCallbackManager : MonoBehaviour
 
     public void UseMajorSpeedPotion()
     {
-        IncreaseSpeedMultiplier(0.3f);
+        IncreaseSpeedMultiplier(0.2f);
     }
 
     public void UseLesserJumpPotion()

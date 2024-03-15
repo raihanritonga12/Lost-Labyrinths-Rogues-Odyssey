@@ -5,6 +5,30 @@
     {
       "AbsoluteMoniker": "D:0:0:{2235702E-7BDE-2CB2-04B7-ADC2B9CDB713}|Assembly-CSharp.csproj|d:\\s7\\skripsi 3\\final game\\lost-labyrinths-rogues-odyssey\\assets\\scripts\\projectiles\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2235702E-7BDE-2CB2-04B7-ADC2B9CDB713}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\projectiles\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2235702E-7BDE-2CB2-04B7-ADC2B9CDB713}|Assembly-CSharp.csproj|d:\\s7\\skripsi 3\\final game\\lost-labyrinths-rogues-odyssey\\assets\\scripts\\enemies\\states\\meleeattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2235702E-7BDE-2CB2-04B7-ADC2B9CDB713}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\states\\meleeattackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2235702E-7BDE-2CB2-04B7-ADC2B9CDB713}|Assembly-CSharp.csproj|D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\assets\\scripts\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2235702E-7BDE-2CB2-04B7-ADC2B9CDB713}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sessionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2235702E-7BDE-2CB2-04B7-ADC2B9CDB713}|Assembly-CSharp.csproj|d:\\s7\\skripsi 3\\final game\\lost-labyrinths-rogues-odyssey\\assets\\itemcallbackmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2235702E-7BDE-2CB2-04B7-ADC2B9CDB713}|Assembly-CSharp.csproj|solutionrelative:assets\\itemcallbackmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2235702E-7BDE-2CB2-04B7-ADC2B9CDB713}|Assembly-CSharp.csproj|d:\\s7\\skripsi 3\\final game\\lost-labyrinths-rogues-odyssey\\assets\\scripts\\player\\playerfinitestatemachine\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2235702E-7BDE-2CB2-04B7-ADC2B9CDB713}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerfinitestatemachine\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2235702E-7BDE-2CB2-04B7-ADC2B9CDB713}|Assembly-CSharp.csproj|d:\\s7\\skripsi 3\\final game\\lost-labyrinths-rogues-odyssey\\assets\\scripts\\player\\data\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2235702E-7BDE-2CB2-04B7-ADC2B9CDB713}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\data\\playerdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2235702E-7BDE-2CB2-04B7-ADC2B9CDB713}|Assembly-CSharp.csproj|d:\\s7\\skripsi 3\\final game\\lost-labyrinths-rogues-odyssey\\assets\\coroutinerun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2235702E-7BDE-2CB2-04B7-ADC2B9CDB713}|Assembly-CSharp.csproj|solutionrelative:assets\\coroutinerun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,9 +48,87 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Projectiles\\Projectile.cs",
               "ToolTip": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\Projectiles\\Projectile.cs",
               "RelativeToolTip": "Assets\\Scripts\\Projectiles\\Projectile.cs",
-              "ViewState": "AQIAACcAAAAAAAAAAAAkwFcAAAAhAAAA",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAuwE0AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-15T09:57:01.332Z",
+              "WhenOpened": "2024-03-15T15:12:36.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ItemCallbackManager.cs",
+              "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\ItemCallbackManager.cs",
+              "RelativeDocumentMoniker": "Assets\\ItemCallbackManager.cs",
+              "ToolTip": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\ItemCallbackManager.cs",
+              "RelativeToolTip": "Assets\\ItemCallbackManager.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAADwv08AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T14:56:22.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\Player\\PlayerFiniteStateMachine\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerFiniteStateMachine\\Player.cs",
+              "ToolTip": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\Player\\PlayerFiniteStateMachine\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerFiniteStateMachine\\Player.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAYwEYAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T14:53:50.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SessionManager.cs",
+              "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\SessionManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SessionManager.cs",
+              "ToolTip": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\SessionManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SessionManager.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAYwA4AAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T14:42:42.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MeleeAttackState.cs",
+              "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\Enemies\\States\\MeleeAttackState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\States\\MeleeAttackState.cs",
+              "ToolTip": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\Enemies\\States\\MeleeAttackState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\States\\MeleeAttackState.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAAwGAAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T14:18:39.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerData.cs",
+              "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\Player\\Data\\PlayerData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Data\\PlayerData.cs",
+              "ToolTip": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\Scripts\\Player\\Data\\PlayerData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Data\\PlayerData.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T14:53:33.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CoroutineRun.cs",
+              "DocumentMoniker": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\CoroutineRun.cs",
+              "RelativeDocumentMoniker": "Assets\\CoroutineRun.cs",
+              "ToolTip": "D:\\s7\\SKRIPSI 3\\Final Game\\Lost-Labyrinths-Rogues-Odyssey\\Assets\\CoroutineRun.cs",
+              "RelativeToolTip": "Assets\\CoroutineRun.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T14:48:13.062Z",
               "EditorCaption": ""
             }
           ]

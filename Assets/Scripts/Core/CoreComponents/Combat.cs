@@ -24,13 +24,15 @@ public class Combat : CoreComponent, IDamageable, IKnockbackable
 	private bool isKnockbackActive;
 	private float knockbackStartTime;
 
+	public int effect = 0;
+
 	public override void LogicUpdate() {
 		CheckKnockback();
 	}
 
 	public void Damage(float amount) {
 		Debug.Log(core.transform.parent.name + " Damaged!");
-		if (CompareTag("PlayerMark"))
+		if (!CompareTag("PlayerMark"))
 		{
 			amount *= SessionManager.playerDamageMultiplier;
 		}

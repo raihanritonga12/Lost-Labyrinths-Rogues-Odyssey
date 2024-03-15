@@ -68,6 +68,7 @@ public class Player : MonoBehaviour
 
         SessionManager.player = this;
         playerData.amountOfJumps = SessionManager.amountOfJumps;
+        playerData.movementVelocity = playerData.baseMovementVelocity * SessionManager.speedMultiplier;
     }
 
     private void Start()

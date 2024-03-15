@@ -34,14 +34,16 @@ public class Projectile : MonoBehaviour
     private SpriteRenderer playerSpriteRenderer;
     private Color originalColor;
 
-    private float freezeDuration = 5f; // Duration to freeze the player in seconds
+    private float freezeDuration = 4f; // Duration to freeze the player in seconds
     private float freezeEndTime; // Time when freezing ends
     private bool isFreezing = false;
     private float burnDuration = 5f;
     private float burnDamage = 3f;
+    private bool attackDone = false;
 
     private void Start()
     {
+        attackDone = false;
         rb = GetComponent<Rigidbody2D>();
 
         rb.gravityScale = 0.0f;
@@ -73,8 +75,9 @@ public class Projectile : MonoBehaviour
             Collider2D damageHit = Physics2D.OverlapCircle(damagePosition.position, damageRadius, whatIsPlayer);
             Collider2D groundHit = Physics2D.OverlapCircle(damagePosition.position, damageRadius, whatIsGround);
 
-            if (damageHit)
+            if (damageHit && !attackDone)
             {
+                attackDone = true;
                 //damageHit.transform.SendMessage("Damage", attackDetails);
                 GameObject hitObject = damageHit.gameObject;
                 hitObject.GetComponentInChildren<Combat>().Damage(damage);
@@ -83,15 +86,25 @@ public class Projectile : MonoBehaviour
                 if (angle == 0) angle++;
         
                 hitObject.GetComponentInChildren<Combat>().Knockback(new Vector2(1, 1), knockbackAmount, angle);
+                SpriteRenderer rendererComponent = GetComponent<SpriteRenderer>();
                 if (effect == 1)
                 {
                     FreezePlayer();
+                    // Disable the renderer component
+                    rendererComponent.enabled = false;
+
                 }
                 else if (effect == 2)
                 {
                     BurnPlayer();
+                    // Disable the renderer component
+                    rendererComponent.enabled = false;
+
                 }
-                Destroy(gameObject);
+                else
+                {
+                    Destroy(gameObject);    
+                }
             }
 
             if (groundHit)
@@ -144,15 +157,16 @@ public class Projectile : MonoBehaviour
 
         // Set flag to indicate player is freezing
         isFreezing = true;
+        Debug.Log("FREEZE");
 
-        // Invoke method to restore player movement velocity and color after freezeDuration
-        Invoke(nameof(RestorePlayer), freezeDuration);
+        // Start the FreezePlayerCoroutine
+        StartCoroutine(FreezePlayerCoroutine());
     }
 
-    private void RestorePlayer()
+    private IEnumerator FreezePlayerCoroutine()
     {
-        if (!isFreezing) // If not freezing, do nothing
-            return;
+        // Wait for freezeDuration seconds
+        yield return new WaitForSeconds(freezeDuration);
 
         // Restore player movement velocity
         player.playerData.movementVelocity += player.playerData.baseMovementVelocity * 0.4f;
@@ -162,18 +176,14 @@ public class Projectile : MonoBehaviour
 
         // Reset flag indicating player is freezing
         isFreezing = false;
+        Debug.Log("FREEZE DONE");
+        Destroy(gameObject);
     }
+
 
     public void BurnPlayer()
     {
-        if (player == null) // Ensure player reference is valid
-            return;
-
-        if (isFreezing) // If freezing, cancel freezing
-        {
-            CancelInvoke(nameof(RestorePlayer));
-            RestorePlayer();
-        }
+        player = SessionManager.player;
 
         playerSpriteRenderer = player.GetComponent<SpriteRenderer>();
 
@@ -189,18 +199,20 @@ public class Projectile : MonoBehaviour
 
     private IEnumerator BurnEffect()
     {
-        Stats playerStats = player.GetComponentInChildren<Stats>();
         float startTime = Time.time;
 
         while (Time.time < startTime + burnDuration)
         {
+            // Wait for each second
+            yield return new WaitForSeconds(1f);
+            Debug.Log("BURN");
             // Reduce player health every second
-            player.GetComponentInChildren<Combat>().Damage(burnDamage * Time.deltaTime);
-
-            yield return null;
+            player.GetComponentInChildren<Combat>().Damage(burnDamage);
         }
-
+        Debug.Log("BURN STOP");
         // Restore player sprite color to original color
         playerSpriteRenderer.color = originalColor;
+        Destroy(gameObject);
     }
+
 }

@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Events\ShopManager.cs" />
     <Compile Include="Assets\Scripts\Projectiles\Projectile.cs" />
     <Compile Include="Assets\Scripts\Enemies\States\IdleState.cs" />
+    <Compile Include="Assets\CoroutineRun.cs" />
     <Compile Include="Assets\LoadingText.cs" />
     <Compile Include="Assets\FloatingEffect.cs" />
     <Compile Include="Assets\Scripts\ProceduralMap\LevelGraphGen copy.cs" />

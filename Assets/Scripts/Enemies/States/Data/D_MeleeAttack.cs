@@ -12,4 +12,5 @@ public class D_MeleeAttack : ScriptableObject
     public float knockbackStrength = 10f;
 
     public LayerMask whatIsPlayer;
+    public int effect = 0;
 }
