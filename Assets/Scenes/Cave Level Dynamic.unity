@@ -281,6 +281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tileRadius: 5
+  iconRadius: 20
 --- !u!1 &3865877
 GameObject:
   m_ObjectHideFlags: 0
@@ -16534,11 +16535,11 @@ MonoBehaviour:
       type: 3}
     type: 0
     goldValue: 70
-  - prefab: {fileID: 6923035645222436057, guid: b9cc30153c984f946aa75949c4f852da,
+  - prefab: {fileID: 6923035645222436057, guid: 84d7bcef7827ddf488bb029bf1a1b71d,
       type: 3}
     type: 1
     goldValue: 200
-  - prefab: {fileID: 1692602011947889081, guid: 6a23ce81691cd9f4e8f7f9eda72e3120,
+  - prefab: {fileID: 6923035645222436057, guid: 6b8023111adef8b4c8a9bc814457f8eb,
       type: 3}
     type: 1
     goldValue: 250
@@ -16550,6 +16551,14 @@ MonoBehaviour:
       type: 3}
     type: 2
     goldValue: 550
+  - prefab: {fileID: 1692602011947889081, guid: c81c3a41a09a61045ab62e7b196c9d6e,
+      type: 3}
+    type: 1
+    goldValue: 200
+  - prefab: {fileID: 1692602011947889081, guid: 28671be6401e2c647bc707cc5a5fbb1e,
+      type: 3}
+    type: 1
+    goldValue: 200
 --- !u!1 &2013015732
 GameObject:
   m_ObjectHideFlags: 0

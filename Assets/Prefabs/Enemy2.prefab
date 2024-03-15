@@ -103,8 +103,7 @@ SpriteRenderer:
   m_SortingLayerID: -679396035
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6949323471574244179, guid: ddf50f95aab6a44479230421f97f0242,
-    type: 3}
+  m_Sprite: {fileID: 960883391, guid: 871b9657a3c508341bae2a9d658a90a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -584,6 +583,7 @@ MonoBehaviour:
   deathParticles:
   - {fileID: 5096148057906189823, guid: 4a122dcc68153794295f6953dd91521e, type: 3}
   - {fileID: 1962614393226834858, guid: 3d13ef1f52d189642930444f906fc622, type: 3}
+  deathManager: {fileID: 0}
 --- !u!1 &7001797300330141503
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,3 +797,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  currentHealth: 0
+  goldValue: 0
