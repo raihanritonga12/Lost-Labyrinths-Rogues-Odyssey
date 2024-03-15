@@ -226,7 +226,7 @@ MonoBehaviour:
   stunStateData: {fileID: 11400000, guid: a70709937ac093745b1ebe44217bc75b, type: 2}
   deadStateData: {fileID: 11400000, guid: a889f74363b812944a9c285aae1606c0, type: 2}
   dodgeStateData: {fileID: 11400000, guid: 3f4657ca74ba50a4fb7578ae5e043abd, type: 2}
-  rangedAttackStateData: {fileID: 11400000, guid: 0ad3801fd63b05b45ad2876e57223e9b,
+  rangedAttackStateData: {fileID: 11400000, guid: 026e03a7f7729f44b8965bf389028194,
     type: 2}
   meleeAttackPosition: {fileID: 5123903443119617303}
   rangedAttackPosition: {fileID: 201665688008154012}
