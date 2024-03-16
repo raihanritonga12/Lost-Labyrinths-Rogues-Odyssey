@@ -5213,7 +5213,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Expert
+  m_text: 'Expert '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 50b95c2dab8e81a468f8b018989dbdb8, type: 2}
   m_sharedMaterial: {fileID: 3631051556017424863, guid: 50b95c2dab8e81a468f8b018989dbdb8,
